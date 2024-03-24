@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT TOY PROB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="st3">
+        <h1>Student Grade Calculator</h1>
+        <form>
+          <label for="marks"> marks (between 0 and 100):</label>
+          <input type="number" id="marks" name="marks" min="0" max="100">
+          <button type="button" onclick="calculateGrade()">Result</button>
+        </form>
+        <p id="grade"></p>
+    </section>
+
+    <section class="st2">
+        <h1>Speed Calculator</h1>
+        <form>
+          <label for="speed">car's speed (in km/h):</label>
+          <input type="number" id="speed" name="speed" required>
+          <button type="button" onclick="calculate()">Result</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <section class="st1">
+        <h1>Net Salary Calculator</h1>
+		<form id="salary-form">
+			<label for="basic-salary">Basic Salary:</label>
+			<input type="number" id="basic-salary" name="basic-salary"><br>
+			<label for="benefits">Benefits:</label>
+			<input type="number" id="benefits" name="benefits"><br>
+			<button type="button" id="calculate-button">Result</button>
+		</form>
+		<div id="result"></div>
+    </section>
+
+    <script src="./netsalarycalculator.js"></script>
+    <script src="./grade.js"></script>
+    <script src="./speeddetector.js"></script>
+    
+</body>
+</html>
